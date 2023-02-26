@@ -8,115 +8,280 @@
     <link rel="icon" type="image/x-icon" href="assets/img/apple-icon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <style>
-      .f-nav{
-        background-color: black;
-        opacity: 0.5;
+      @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+      body{
+        color:white;
       }
+      a{
+        text-decoration: none;
+      }
+      /* .f-nav-scrolled{
+        display: none;
+      } */
       .navbar{
-        background-color: black;
-        opacity: 0.5;
-        box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        padding-top: 45px;
         transition: all 0.5;
       }
       .navbar-scrolled{
         background-color: black;
-        opacity: 0.7;
-        box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        opacity: 1;
+        padding-top: 10px;
+        padding-bottom: 10px;
       }
       .carousel-item {
-        position:sticky;
         top: 0;
-        height: 755px;
+        height: 753px;
+      }
+      .darkened-image {
+        filter: brightness(50%);
+      }
+      .title{
+        font-family: 'Lobster', cursive !important;
+        align-items: center;
+        color: white;
+      }
+      pre{
+        font-size: 15px;
+        font-weight: 500;
+      }
+      .header-text {
+        position: absolute;
+        top: 20%;
+        left: 1.8%;
+        right: auto;
+        width: 96.66666666666666%;
+        color: #fff;
+      }
+      .header-text h2 {
+        font-size: 40px;
+      }
+      .header-text h2 span {
+        background-color: #2980b9;
+        padding: 10px;
+      }
+      .header-text h3 span {
+        background-color: #000;
+        padding: 15px;
+      }
+      .btn-min-block {
+        min-width: 170px;
+        line-height: 26px;
+      }
+      .btn-theme {
+        color: #fff;
+        background-color: transparent;
+        border: 2px solid orange;
+        border-radius: 25px;
+        margin-right: 15px;
+        font-weight: bold;
+      }
+      .btn-theme:hover {
+        color: #fff;
+        background-color: orange;
+        border-radius: 25px;
+        margin-right: 15px;
+        font-weight: bold;
+      }
+      .btn-orange{
+        color: #fff;
+        background-color: rgba(255, 166, 0, 0.764);
+        border-radius: 25px;
+      }
+      .btn-orange:hover{
+        color: #fff;
+        background-color: orange;
+        border-radius: 25px;
+      }
+      .nav-link{
+        color: white;
+      }
+      .nav-link:hover{
+        color: orange;
+      }
+      .nav-link:focus{
+        color: orange;
+      }
+      .nav-link + .active{
+        color: orange;
+      }
+      .carousel-control-prev-icon{
+        position: absolute;
+        left: 0;
+        margin-left: 25px;
+        color: rgba(255, 255, 255, 0.578);
+        background-color: rgba(166, 166, 166, 0.451);
+        opacity: 0.9;
+        border-radius: 50%;
+        padding: 20px;
+      }
+      .carousel-control-next-icon{
+        position: absolute;
+        right: 0;
+        margin-right: 25px;
+        color: rgba(255, 255, 255, 0.578);
+        background-color: rgba(166, 166, 166, 0.451);
+        opacity: 0.9;
+        border-radius: 50%;
+        padding: 20px;
       }
     </style>
    </head>
    <body>
-    <div class="d-none d-lg-block ps-3 py-2 f-nav">
-      <div class="container">
-      <div class="row pb-1" style="font-size: 12px;">
+    
+    <div id="fnav" class="d-none d-lg-block ps-3 py-2 f-nav fixed-top">
+      <div class="container mt-2">
+      <div class="row pb-1" style="font-size: 16px;">
           <div class="col">
-          <a href="mailto:info@company.com" class="me-2" style="color: #CFD6E1;"><svg class=" me-2" height="13px" width="13px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#CFD6E1" stroke="#CFD6E1"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#CFD6E1;} </style> <g> <path class="st0" d="M452.29,74.535H59.71C26.728,74.535,0,101.263,0,134.236v243.527c0,32.974,26.728,59.702,59.71,59.702H452.29 c32.973,0,59.71-26.728,59.71-59.702V134.236C512,101.263,485.264,74.535,452.29,74.535z M483.49,393.849l-11.366,13.46 L312.957,277.407l-24.65,23.454c-18.268,16.776-46.345,16.776-64.614,0l-24.65-23.454L39.876,407.309l-11.366-13.46l149.44-136.517 L27.531,115.968l8.893-11.783L256,270.56l219.575-166.375l8.886,11.783l-150.41,141.364L483.49,393.849z"></path> </g> </g></svg>
-              info@company.com</a>
-          <a href="tel:0100200340" class="me-3" style="color: #CFD6E1;"><svg class=" me-2" fill="#CFD6E1" width="14px" height="14px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M21.384,17.752a2.108,2.108,0,0,1-.522,3.359,7.543,7.543,0,0,1-5.476.642C10.5,20.523,3.477,13.5,2.247,8.614a7.543,7.543,0,0,1,.642-5.476,2.108,2.108,0,0,1,3.359-.522L8.333,4.7a2.094,2.094,0,0,1,.445,2.328A3.877,3.877,0,0,1,8,8.2c-2.384,2.384,5.417,10.185,7.8,7.8a3.877,3.877,0,0,1,1.173-.781,2.092,2.092,0,0,1,2.328.445Z"></path></g></svg>
-              010-020-0340</a>
+          <a href="tel:1558955488" class="me-2 text-white">
+            <i style="color: orange;" class="bi bi-phone"></i>
+            +1 5589 55488 55</a>
+          <a href="#" class="text-white">
+            <i style="color: orange;" class="bi bi-clock"></i>
+            Mon-Sat: 11:00 AM - 23:00 PM</a>
           </div>
       </div>
       </div>
     </div>
-    <nav id="navv" class="navbar navbar-expand-lg sticky-top">
-        <div class="container-fluid">
-          <a class="navbar-brand text-white" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Pricing</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown link
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+    <nav id="navv" class="navbar navbar-expand-lg fixed-top d-flex justify-content-between ps-5 pe-5">
+      <div class="ps-4 ms-5 mt-3">
+        <a class="navbar-brand text-white title" style="font-size: 30px; font-weight: 300;" href="index.html">Delicious</a>
+      </div>
+      <div class="mt-4">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white active" aria-current="page" href="#carousel">Home</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Menu</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" aria-current="page" href="#">Specials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Events</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">Chefs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Gallery</a>
+            </li>
+            <li class="nav-item dropdown px-2" id="myDropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  Drop Down  </a>
+              <ul class="dropdown-menu">
+                <li> <a class="dropdown-item" href="#"> Dropdown 1 </a></li>
+                <li> <a class="dropdown-item" href="#"> Deep Dropdown &raquo; </a>
+                  <ul class="submenu dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Deep Dropdown 1</a></li>
+                    <li><a class="dropdown-item" href="#">Deep Dropdown 2</a></li>
+                    <li><a class="dropdown-item" href="#">Deep Dropdown 3 </a></li>
+                    <li><a class="dropdown-item" href="#">Deep Dropdown 4</a></li>
+                    <li><a class="dropdown-item" href="#">Deep Dropdown 5</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="#"> Dropdown 3 </a></li>
+                <li><a class="dropdown-item" href="#"> Dropdown 4 </a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item me-5 px-2">
+              <a class="btn btn-orange p-1 px-4 " href="#">Book a table</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/slide/slide-1.jpg" class="mw-100" alt="">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/slide/slide-2.jpg" class="mw-100" alt="">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/slide/slide-3.jpg" class="mw-100" alt="">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div id="carousel" class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/slide/slide-1.jpg" class="darkened-image mw-100" alt="">
+          <div class="header-text hidden-xs">
+            <div class="text-center pt-5">
+                <h1 class="mt-5 title">
+                  <span style="color: orange;">Delicious</span> Restaurant
+                </h1>
+                <br>
+                <pre class="text-center pe-5">
+                  Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam.
+                  Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque
+                  accusamus repellendus deleniti vel. Minus et tempore modi architecto.
+                </pre>
+                <br>
+                <div class="">
+                  <a class="btn btn-theme btn-sm btn-min-block" href="#">OUR MENU</a><a class="btn btn-theme btn-sm btn-min-block" href="#">BOOK A TABLE</a>
+                </div>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="carousel-item">
+          <img src="img/slide/slide-2.jpg" class="darkened-image mw-100" alt="">
+          <div class="header-text hidden-xs">
+            <div class="text-center pt-5">
+                <h1 class="mt-5 title">
+                Lorem Ipsum Dolor
+                </h1>
+                <br>
+                <pre class="text-center pe-5">
+                  Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam.
+                  Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque
+                  accusamus repellendus deleniti vel. Minus et tempore modi architecto.
+                </pre>
+                <br>
+                <div class="">
+                  <a class="btn btn-theme btn-sm btn-min-block" href="#">OUR MENU</a><a class="btn btn-theme btn-sm btn-min-block" href="#">BOOK A TABLE</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/slide/slide-3.jpg" class="darkened-image mw-100" alt="">
+          <div class="header-text hidden-xs">
+            <div class="text-center pt-5">
+                <h1 class="mt-5 title">
+                  Sequi ea ut et est quaerat
+                </h1>
+                <br>
+                <pre class="text-center pe-5">
+                  Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam.
+                  Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque
+                  accusamus repellendus deleniti vel. Minus et tempore modi architecto.
+                </pre>
+                <br>
+                <div class="">
+                  <a class="btn btn-theme btn-sm btn-min-block" href="#">OUR MENU</a><a class="btn btn-theme btn-sm btn-min-block" href="#">BOOK A TABLE</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-
-    
-    
     <div style="height: 1000px">
         <!-- just to make scrolling effect possible -->
 			
@@ -126,15 +291,34 @@
 
 
     <script>
-        const navvigation = document.getElementById('navv');
-        window.addEventListener('scroll' , () => {
-            if (window.scrollY >= 65){
-                navvigation.classList.add('navbar-scrolled')
-            }
-            else if (window.scrollY <65){
-                navvigation.classList.remove('navbar-scrolled')
-            }
-        })
+      $(document).ready(function(){
+        $('.dropdown-submenu a.test').on("click", function(e){
+          $(this).next('ul').toggle();
+          e.stopPropagation();
+          e.preventDefault();
+        });
+      });
+      </script>
+    <script>
+      // const fnav = document.getElementById('fnav')
+      // window.addEventListener('scroll' , () => {
+      //   if (window.scrollY >= 30){
+      //         fnav.classList.add('f-nav-scrolled')
+      //     }
+      //     else if (window.scrollY <30){
+      //         fnav.classList.remove('f-nav-scrolled')
+      //     }
+      // })
+
+      const navvigation = document.getElementById('navv');
+      window.addEventListener('scroll' , () => {
+          if (window.scrollY >= 65){
+              navvigation.classList.add('navbar-scrolled')
+          }
+          else if (window.scrollY <65){
+              navvigation.classList.remove('navbar-scrolled')
+          }
+      })
     </script>
     <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.js"></script>
