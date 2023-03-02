@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
 
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
@@ -207,9 +209,11 @@
         border: 0px;
       }
       #tabs .nav-tabs .nav-link {
-        font-size: 20px;
+        font-size: 17px;
+        font-weight: 500;
         color: black;
         border-radius: 0px;
+        padding-right: 60px;
       }
       #tabs .nav-tabs .nav-link:focus {
         border: 0px;
@@ -737,54 +741,54 @@
     </div>
     <div class="row mw-100">
       <section id="tabs">
-            <div class="col-12 d-flex">
-              <nav class="col-3 d-block my-auto">
-                <div class="nav nav-tabs nav-fill d-block" id="nav-tab" role="tablist">
-                  <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Modi sit est</a>
-                  <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
-                  <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
-                  <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false">About</a>
-                  <a class="nav-item nav-link" id="nav-last-tab" data-toggle="tab" href="#nav-last" role="tab" aria-controls="nav-last" aria-selected="false">last</a>
+            <div class="col-10 mx-auto d-md-flex d-block">
+              <nav class="col-md-3 col-12 d-block my-auto">
+                <div class="nav nav-tabs nav-fill d-block col-12" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active text-start" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Modi sit est</a>
+                  <a class="nav-item nav-link text-start" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Unde praesentium sed</a>
+                  <a class="nav-item nav-link text-start" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Pariatur explicabo vel</a>
+                  <a class="nav-item nav-link text-start" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false">Nostrum qui quasi</a>
+                  <a class="nav-item nav-link text-start" id="nav-last-tab" data-toggle="tab" href="#nav-last" role="tab" aria-controls="nav-last" aria-selected="false">Iusto ut expedita aut</a>
                 </div>
               </nav>
 
-              <div class="tab-content col-9 text-black" id="nav-tabContent">
+              <div class="tab-content col-12 col-md-9 text-black" id="nav-tabContent">
                 <div class="tab-pane fade show active content" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                  <div class="d-flex">
-                    <div class="col-md-4 col-sm-12 me-5 pe-5 order-2"><img class="mw-100 pt-5" src="img/specials-1.jpg" alt=""></div>
-                    <div class="col-md-8 col-sm-12 content  my-auto ps-4 pe-5 text-secondary order-1" style="font-size: 18px;">
-                      <span class="title text-black text-muted" style="font-size: 25px;">Est eveniet ipsam sindera pad rone matrelat sando reda</span><br><br>Omnis blanditiis saepe eos autem qui sunt debitis porro quia.<br><br>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel 
+                  <div class="d-md-flex d-block">
+                    <div class="col-md-4 col-sm-12  order-2"><img class="mw-100 pt-5 mb-5" src="img/specials-1.jpg" alt=""></div>
+                    <div class="col-md-8 col-sm-12 content align-self-center ps-4 text-secondary order-1" style="font-size: 18px;">
+                      <span class="title text-black text-muted" style="font-size: 25px;">Architecto ut aperiam autem id</span><br><br>Omnis blanditiis saepe eos autem qui sunt debitis porro quia.<br><br>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel 
                     </div>
                   </div>
                 </div>
                 <div class="tab-pane fade content" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                  <div class="d-flex">
-                    <div class="col-4 me-5 pe-5 order-2"><img class="mw-100 pt-5" src="img/specials-2.jpg" alt=""></div>
-                    <div class="col-8 content  my-auto ps-4 pe-5 text-secondary order-1" style="font-size: 18px;">
-                      <span class="title text-black text-muted" style="font-size: 25px;">Et blanditiis nemo veritatis excepturi</span><br><br>Omnis blanditiis saepe eos autem qui sunt debitis porro quia.<br><br>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel 
+                  <div class="d-md-flex d-block">
+                    <div class="col-md-4 col-sm-12  order-2"><img class="mw-100 pt-5 mb-5" src="img/specials-2.jpg" alt=""></div>
+                    <div class="col-md-8 col-sm-12 content align-self-center ps-4 text-secondary order-1" style="font-size: 18px;">
+                      <span class="title text-black text-muted" style="font-size: 25px;">Et blanditiis nemo veritatis excepturi</span><br><br>Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka<br><br>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal
                     </div>
                   </div>
                 </div>
                 <div class="tab-pane fade content" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                  <div class="d-flex">
-                    <div class="col-4 me-5 pe-5 order-2"><img class="mw-100 pt-5" src="img/specials-3.jpg" alt=""></div>
-                    <div class="col-8 content  my-auto ps-4 pe-5 text-secondary order-1 style="font-size: 18px;">
+                  <div class="d-md-flex d-block">
+                    <div class="col-md-4 col-sm-12  order-2"><img class="mw-100 pt-5 mb-5" src="img/specials-3.jpg" alt=""></div>
+                    <div class="col-md-8 col-sm-12 content align-self-center ps-4 text-secondary order-1" style="font-size: 18px;">
                       <span class="title text-black text-muted" style="font-size: 25px;">Impedit facilis occaecati odio neque aperiam sit</span><br><br>Omnis blanditiis saepe eos autem qui sunt debitis porro quia.<br><br>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel 
                     </div>
                   </div>
                 </div>
                 <div class="tab-pane fade content" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
-                  <div class="d-flex">
-                    <div class="col-4 me-5 pe-5 order-2"><img class="mw-100 pt-5" src="img/specials-4.jpg" alt=""></div>
-                    <div class="col-8 content  my-auto ps-4 pe-5 text-secondary order-1" style="font-size: 18px;">
-                      <span class="title text-black text-muted" style="font-size: 25px;">Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</span><br><br>Omnis blanditiis saepe eos autem qui sunt debitis porro quia.<br><br>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel 
+                  <div class="d-md-flex d-block">
+                    <div class="col-md-4 col-sm-12  order-2"><img class="mw-100 pt-5 mb-5" src="img/specials-4.jpg" alt=""></div>
+                    <div class="col-md-8 col-sm-12 content align-self-center ps-4 text-secondary order-1" style="font-size: 18px;">
+                      <span class="title text-black text-muted" style="font-size: 25px;">Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</span><br><br>Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus<br><br>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel 
                     </div>
                   </div>
                 </div>
                 <div class="tab-pane fade content" id="nav-last" role="tabpanel" aria-labelledby="nav-last-tab">
-                  <div class="d-flex">
-                    <div class="col-4 me-5 pe-5 order-2"><img class="mw-100 pt-5" src="img/specials-5.jpg" alt=""></div>
-                    <div class="col-8 content  my-auto ps-4 pe-5 text-secondary order-1" style="font-size: 18px;">
+                  <div class="d-md-flex d-block">
+                    <div class="col-md-4 col-sm-12  order-2"><img class="mw-100 pt-5 mb-5" src="img/specials-5.jpg" alt=""></div>
+                    <div class="col-md-8 col-sm-12 content align-self-center ps-4 text-secondary order-1" style="font-size: 18px;">
                       <span class="title text-black text-muted" style="font-size: 25px;">Est eveniet ipsam sindera pad rone matrelat sando reda</span><br><br>Omnis blanditiis saepe eos autem qui sunt debitis porro quia.<br><br>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel 
                     </div>
                   </div>
@@ -801,7 +805,7 @@
     </div> 
 
 
-
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script>
