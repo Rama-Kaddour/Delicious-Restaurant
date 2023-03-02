@@ -203,7 +203,33 @@
         font-size: 15px;
         font-weight: 400;
       }
-
+      .d-block{
+        border: 0px;
+      }
+      #tabs .nav-tabs .nav-link {
+        font-size: 20px;
+        color: black;
+        border-radius: 0px;
+      }
+      #tabs .nav-tabs .nav-link:focus {
+        border: 0px;
+        color: #ffb03b;
+        font-size: 20px;
+        border-radius: 0px;
+      }
+      #tabs .nav-tabs .nav-link:hover {
+        border: 0px;
+        color: #ffb03b;
+        font-size: 20px;
+        border-radius: 0px;
+      }
+      #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        border: 0px;
+        color: #ffb03b !important;
+        border-right: 4px solid #ffb03b !important;
+        font-size: 20px;
+        border-radius: 0px;
+      }
       /* @media (max-width: 1280px) {
         .carousel-item {
         min-height: 1300px;
@@ -441,7 +467,7 @@
               <a class="nav-link active" id="pills-showAll-tab" data-toggle="pill" href="#pills-showAll" role="tab" aria-controls="pills-showAll" aria-selected="true" aria-expanded="false">Show All</a>
             </li>
             <li class="nav-item mx-2" role="presentation">
-              <a class="nav-link" id="pills-starters-tab" data-toggle="pill" href="#pills-starters" role="tab" aria-controls="pills-product" aria-selected="false" aria-expanded="false">Starters</a>
+              <a class="nav-link" id="pills-Unde-tab" data-toggle="pill" href="#pills-starters" role="tab" aria-controls="pills-product" aria-selected="false" aria-expanded="false">Starters</a>
             </li>
             <li class="nav-item" role="presentation">
               <a class="nav-link" id="pills-salads-tab" data-toggle="pill" href="#pills-salads" role="tab" aria-controls="pills-salads" aria-selected="false" aria-expanded="false">Salads</a>
@@ -700,7 +726,74 @@
           </div>
         </div>
         </div>
+    </div>
+    <div class="row  mw-100">
+      <div class="col-12">
+        <p class="text-dark text-center mt-5 line" style="font-size: 16px;">
+          <span class="title text-dark" style="font-size: 30px;">Check Our</span> <span class="title" style="color:orange; font-size: 30px;">Specials</span><br><br>
+          Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci <br> expedita at voluptas atque vitae autem.
+        </p>
       </div>
+    </div>
+    <div class="row mw-100">
+      <section id="tabs">
+            <div class="col-12 d-flex">
+              <nav class="col-3 d-block my-auto">
+                <div class="nav nav-tabs nav-fill d-block" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Modi sit est</a>
+                  <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+                  <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+                  <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false">About</a>
+                  <a class="nav-item nav-link" id="nav-last-tab" data-toggle="tab" href="#nav-last" role="tab" aria-controls="nav-last" aria-selected="false">last</a>
+                </div>
+              </nav>
+
+              <div class="tab-content col-9 text-black" id="nav-tabContent">
+                <div class="tab-pane fade show active content" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                  <div class="d-flex">
+                    <div class="col-md-4 col-sm-12 me-5 pe-5 order-2"><img class="mw-100 pt-5" src="img/specials-1.jpg" alt=""></div>
+                    <div class="col-md-8 col-sm-12 content  my-auto ps-4 pe-5 text-secondary order-1" style="font-size: 18px;">
+                      <span class="title text-black text-muted" style="font-size: 25px;">Est eveniet ipsam sindera pad rone matrelat sando reda</span><br><br>Omnis blanditiis saepe eos autem qui sunt debitis porro quia.<br><br>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel 
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade content" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                  <div class="d-flex">
+                    <div class="col-4 me-5 pe-5 order-2"><img class="mw-100 pt-5" src="img/specials-2.jpg" alt=""></div>
+                    <div class="col-8 content  my-auto ps-4 pe-5 text-secondary order-1" style="font-size: 18px;">
+                      <span class="title text-black text-muted" style="font-size: 25px;">Et blanditiis nemo veritatis excepturi</span><br><br>Omnis blanditiis saepe eos autem qui sunt debitis porro quia.<br><br>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel 
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade content" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                  <div class="d-flex">
+                    <div class="col-4 me-5 pe-5 order-2"><img class="mw-100 pt-5" src="img/specials-3.jpg" alt=""></div>
+                    <div class="col-8 content  my-auto ps-4 pe-5 text-secondary order-1 style="font-size: 18px;">
+                      <span class="title text-black text-muted" style="font-size: 25px;">Impedit facilis occaecati odio neque aperiam sit</span><br><br>Omnis blanditiis saepe eos autem qui sunt debitis porro quia.<br><br>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel 
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade content" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+                  <div class="d-flex">
+                    <div class="col-4 me-5 pe-5 order-2"><img class="mw-100 pt-5" src="img/specials-4.jpg" alt=""></div>
+                    <div class="col-8 content  my-auto ps-4 pe-5 text-secondary order-1" style="font-size: 18px;">
+                      <span class="title text-black text-muted" style="font-size: 25px;">Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</span><br><br>Omnis blanditiis saepe eos autem qui sunt debitis porro quia.<br><br>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel 
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade content" id="nav-last" role="tabpanel" aria-labelledby="nav-last-tab">
+                  <div class="d-flex">
+                    <div class="col-4 me-5 pe-5 order-2"><img class="mw-100 pt-5" src="img/specials-5.jpg" alt=""></div>
+                    <div class="col-8 content  my-auto ps-4 pe-5 text-secondary order-1" style="font-size: 18px;">
+                      <span class="title text-black text-muted" style="font-size: 25px;">Est eveniet ipsam sindera pad rone matrelat sando reda</span><br><br>Omnis blanditiis saepe eos autem qui sunt debitis porro quia.<br><br>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel 
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+            </div>
+      </section>
     </div>
     <div style="height: 1000px">
         <!-- just to make scrolling effect possible -->
