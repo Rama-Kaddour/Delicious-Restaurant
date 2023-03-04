@@ -26,7 +26,7 @@
         display: none;
       } */
       .orange{
-        color: orange;
+        color: orange !important;
       }
       .navbar{
         padding-top: 45px;
@@ -185,10 +185,8 @@
         border-radius: 25px;
       }
       .nav-pills .nav-link.active{
-        padding: 5px 15px;
-        color: black;
-        border: 2px solid #ffb03b;
-        background-color: white;
+        color: white;
+        background-color: orange;
         border-radius: 25px;
       }
       .nav-pills .nav-link:hover{
@@ -208,18 +206,25 @@
       .d-block{
         border: 0px;
       }
-      #tabs .nav-tabs .nav-link {
+      #tabs .nav-tabs .nav-link{
         font-size: 17px;
         font-weight: 500;
         color: black;
         border-radius: 0px;
         padding-right: 60px;
       }
+      #tabs .nav-tabs .nav-link .n-o {
+        border-right: 3px solid #b8b8b8 !important;
+      }
+      #tabs .nav-tabs .nav-link .first-tab {
+        border-right: 3px solid #ffb03b !important;
+      }
       #tabs .nav-tabs .nav-link:focus {
         border: 0px;
         color: #ffb03b;
         font-size: 20px;
         border-radius: 0px;
+        border-right: 3px solid #ffb03b !important;
       }
       #tabs .nav-tabs .nav-link:hover {
         border: 0px;
@@ -230,15 +235,51 @@
       #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
         border: 0px;
         color: #ffb03b !important;
-        border-right: 4px solid #ffb03b !important;
+        border-right: 3px solid #ffb03b !important;
         font-size: 20px;
         border-radius: 0px;
       }
-      /* @media (max-width: 1280px) {
-        .carousel-item {
-        min-height: 1300px;
+      .fixed-bg-image{
+        background: no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
       }
-      } */
+      .carousel-indicators >.dots{
+        border-radius: 50%;
+        width: 13px;
+        height: 13px;
+        background-color: white;
+      }
+      .carousel-indicators >.dots.active{
+        background-color: orange;
+      }
+      .sec-center{
+        height: 680px;
+        padding-top: 50px;
+        color: white !important;
+        filter: none !important;
+        position: relative;
+      }
+      .second-slider{
+        height: 600px;
+      }
+      .fixed-bg-image.darkened-image > .title.brithtness{
+        filter: brightness(100%) !important;
+      }
+      
+      .text-decoration-underline{
+        text-decoration-color: orange !important;
+      }
+      @media (max-width: 1280px) {
+        .second-slider {
+        height: 830px;
+      }
+      .fixed-bg-image{
+        height: 1050px;
+      }
+      }
     </style>
    </head>
    <body>
@@ -744,11 +785,11 @@
             <div class="col-10 mx-auto d-md-flex d-block">
               <nav class="col-md-3 col-12 d-block my-auto">
                 <div class="nav nav-tabs nav-fill d-block col-12" id="nav-tab" role="tablist">
-                  <a class="nav-item nav-link active text-start" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Modi sit est</a>
-                  <a class="nav-item nav-link text-start" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Unde praesentium sed</a>
-                  <a class="nav-item nav-link text-start" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Pariatur explicabo vel</a>
-                  <a class="nav-item nav-link text-start" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false">Nostrum qui quasi</a>
-                  <a class="nav-item nav-link text-start" id="nav-last-tab" data-toggle="tab" href="#nav-last" role="tab" aria-controls="nav-last" aria-selected="false">Iusto ut expedita aut</a>
+                  <a class="nav-item nav-link active text-start first-tab" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Modi sit est</a>
+                  <a class="nav-item nav-link text-start n-o" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Unde praesentium sed</a>
+                  <a class="nav-item nav-link text-start n-o" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Pariatur explicabo vel</a>
+                  <a class="nav-item nav-link text-start n-o" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false">Nostrum qui quasi</a>
+                  <a class="nav-item nav-link text-start n-o" id="nav-last-tab" data-toggle="tab" href="#nav-last" role="tab" aria-controls="nav-last" aria-selected="false">Iusto ut expedita aut</a>
                 </div>
               </nav>
 
@@ -799,10 +840,95 @@
             </div>
       </section>
     </div>
-    <div style="height: 1000px">
-        <!-- just to make scrolling effect possible -->
-			
-    </div> 
+    <div class="fixed-bg-image darkened-image" style="background-image: url('img/events-bg.jpg');">
+      <div class="row">
+        <p class="text-center pt-5 title brightness" style="font-size: 35px;">
+          Organize Your<span style="color:orange; font-size: 30px;">Events</span> in our Restaurant
+        </p>
+      </div>
+      <div id="carouselExample" class="carousel slide second-slider" data-bs-ride="carousel">
+        <ol class="carousel-indicators ">
+            <li id="gg" data-bs-target="#carouselExample" data-bs-slide-to="0" class="dots active"></li>
+            <li id="gg" data-bs-target="#carouselExample" data-bs-slide-to="1" class="dots"></li>
+            <li id="gg" data-bs-target="#carouselExample" data-bs-slide-to="2" class="dots"></li>
+        </ol>
+        <div class="carousel-inner" >
+            <div class="carousel-item active">
+                <div class="container " >
+                    <div class="row sec-center">
+                        <div class="col-lg-6 col-md-8 col-12"><img class="img-fluid" src="img/event-birthday.jpg"></div>
+                        <div class="col-lg-6 col-md-12 d-flex col-12" style="font-size: 18px;">
+                            <div class="text-start ps-3">
+                              <div class="row"><span class="orange title ps-0 pt-4 pt-lg-0" style="font-size: 25px;">Birthday Parties</span></div>
+                              <div class="row fw-bold text-decoration-underline" >189$</div>
+                              <div class="row pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea minus quod enim. Odit, neque aspernatur.</div>
+                              <div class="row pt-3 d-flex">
+                                <i class="bi bi-check-circle orange col ps-0"></i> <div class="ps-0 col-11">Ullamco laboris nisi ut aliquip ex ea commodo consequat</div> 
+                              </div>
+                              <div class="row pt-3 d-flex">
+                                <i class="bi bi-check-circle orange col ps-0"></i> <div class="ps-0 col-11">Ullamco laboris nisi ut aliquip ex ea commodo consequat</div> 
+                              </div>
+                              <div class="row pt-3 d-flex">
+                                <i class="bi bi-check-circle orange col ps-0"></i> <div class="ps-0 col-11">Ullamco laboris nisi ut aliquip ex ea commodo consequat</div> 
+                              </div>
+                              <div class="row pt-2">Ullamco laboris nisi ut aliquip ex ea commodo consequat adipisicing elit. Ea minus quod enim. Odit, neque aspernatur.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container" >
+                    <div class="row sec-center">
+                        <div class="col-lg-6 col-md-8 col-12"><img class="img-fluid" src="img/event-private.jpg"></div>
+                        <div class="col-lg-6 col-md-12 d-flex col-12" style="font-size: 18px;">
+                          <div class="text-start ps-3">
+                            <div class="row"><span class="orange title ps-0 pt-4 pt-lg-0" style="font-size: 25px;">Private Parties</span></div>
+                            <div class="row fw-bold text-decoration-underline" >250$</div>
+                            <div class="row pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea minus quod enim. Odit, neque aspernatur.</div>
+                            <div class="row pt-3 d-flex">
+                              <i class="bi bi-check-circle orange col ps-0"></i> <div class="ps-0 col-11">Ullamco laboris nisi ut aliquip ex ea commodo consequat</div> 
+                            </div>
+                            <div class="row pt-3 d-flex">
+                              <i class="bi bi-check-circle orange col ps-0"></i> <div class="ps-0 col-11">Ullamco laboris nisi ut aliquip ex ea commodo consequat</div> 
+                            </div>
+                            <div class="row pt-3 d-flex">
+                              <i class="bi bi-check-circle orange col ps-0"></i> <div class="ps-0 col-11">Ullamco laboris nisi ut aliquip ex ea commodo consequat</div> 
+                            </div>
+                            <div class="row pt-2">Ullamco laboris nisi ut aliquip ex ea commodo consequat adipisicing elit. Ea minus quod enim. Odit, neque aspernatur.</div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container" >
+                    <div class="row sec-center">
+                        <div class="col-lg-6 col-md-8 col-12"><img class="img-fluid" src="img/event-custom.jpg"></div>
+                        <div class="col-lg-6 col-md-12 d-flex col-12" style="font-size: 18px;">
+                          <div class="text-start ps-3">
+                            <div class="row"><span class="orange title ps-0 pt-4 pt-lg-0" style="font-size: 25px;">Custom Parties</span></div>
+                            <div class="row fw-bold text-decoration-underline" >99$</div>
+                            <div class="row pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea minus quod enim. Odit, neque aspernatur.</div>
+                            <div class="row pt-3 d-flex">
+                              <i class="bi bi-check-circle orange col ps-0"></i> <div class="ps-0 col-11">Ullamco laboris nisi ut aliquip ex ea commodo consequat</div> 
+                            </div>
+                            <div class="row pt-3 d-flex">
+                              <i class="bi bi-check-circle orange col ps-0"></i> <div class="ps-0 col-11">Ullamco laboris nisi ut aliquip ex ea commodo consequat</div> 
+                            </div>
+                            <div class="row pt-3 d-flex">
+                              <i class="bi bi-check-circle orange col ps-0"></i> <div class="ps-0 col-11">Ullamco laboris nisi ut aliquip ex ea commodo consequat</div> 
+                            </div>
+                            <div class="row pt-2">Ullamco laboris nisi ut aliquip ex ea commodo consequat adipisicing elit. Ea minus quod enim. Odit, neque aspernatur.</div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
 
 
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
