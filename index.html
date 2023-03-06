@@ -42,6 +42,9 @@
       .darkened-image {
         filter: brightness(50%);
       }
+      .darkened-image2 {
+        filter: opacity(25%);
+      }
       .title{
         font-family: 'Lobster', cursive !important;
         align-items: center;
@@ -302,10 +305,30 @@
         background-color: black;
         opacity: 0.8 !important;
       }
-      /* .modal>.modal-dialog>.modal-content>.modal-body
-      {
-        opacity: 1 !important;
-      }  */
+      .card-image{
+        position: relative;
+        bottom: 60px;
+      }
+      .hover-orange{
+        color: rgb(68, 68, 68) !important;
+      }
+      .hover-orange:hover{
+        color: orange !important;
+      }
+      .wrap2{
+        position: relative;
+        height: 750px; 
+      }
+      .wrap2>.bg-text{
+        position: absolute;
+        width: 1500px;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .wrap2>.darkened-image{
+        position: relative;
+      }
       @media (max-width: 1000px) {
         #tabs .nav-tabs .nav-link.active {
         border: 0px;
@@ -335,6 +358,22 @@
         left: 50%;
         transform: translate(-50%, -50%);
       }
+      .wrap2{
+        position: relative;
+        height: 1480px;
+        
+      }
+      .wrap2>.bg-text{
+        position: absolute;
+        width: 1500px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+      }
+      .chef-img{
+        width: 395px !important;
+      }
       .second-slider{
         height: 840px;
       }
@@ -344,7 +383,7 @@
       }
     </style>
    </head>
-   <body>
+   <body class="mw-100">
     
     <div id="fnav" class="d-none d-lg-block ps-3 py-2 f-nav fixed-top">
       <div class="container mt-2">
@@ -522,11 +561,11 @@
       </p>
       </div>
     </div>
-    <div class="row  mw-100">
-      <div class="col-12">
+    <div class="row mw-100 d-flex justify-content-center ps-3">
+      <div class="col-lg-5">
         <p class="text-dark text-center mt-5 line" style="font-size: 16px;">
           <span class="title text-dark" style="font-size: 30px;">Why choose </span> <span class="title" style="color:orange; font-size: 30px;">Restaurant</span><br><br>
-          Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci <br> expedita at voluptas atque vitae autem.
+          Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.
         </p>
       </div>
     </div>
@@ -567,30 +606,30 @@
       </div>
     </div>
     <div class="row mw-100 text-black d-flex justify-content-center">
-      <div class="tabs-to-dropdown col-10">
+      <div class="tabs-to-dropdown col-12 col-lg-11">
         <div class="nav-wrapper d-flex align-items-center justify-content-center ">
-          <ul class="nav nav-pills d-none d-md-flex " id="pills-tab" role="tablist">
+          <ul class="nav nav-pills d-flex " id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
               <a class="nav-link active" id="pills-showAll-tab" data-toggle="pill" href="#pills-showAll" role="tab" aria-controls="pills-showAll" aria-selected="true" aria-expanded="false">Show All</a>
             </li>
-            <li class="nav-item mx-2" role="presentation">
+            <li class="nav-item mx-lg-2 mx-1" role="presentation">
               <a class="nav-link" id="pills-Unde-tab" data-toggle="pill" href="#pills-starters" role="tab" aria-controls="pills-product" aria-selected="false" aria-expanded="false">Starters</a>
             </li>
             <li class="nav-item" role="presentation">
               <a class="nav-link" id="pills-salads-tab" data-toggle="pill" href="#pills-salads" role="tab" aria-controls="pills-salads" aria-selected="false" aria-expanded="false">Salads</a>
             </li>
-            <li class="nav-item mx-2" role="presentation">
+            <li class="nav-item ms-lg-2 ms-1" role="presentation">
               <a class="nav-link" id="pills-specially-tab" data-toggle="pill" href="#pills-specially" role="tab" aria-controls="pills-specially" aria-selected="false" aria-expanded="false">Specialty</a>
             </li>
           </ul>
         </div>
-        <div class="tab-content" id="pills-tabContent">
+        <div class="tab-content d-flex justify-content-center col-11 ps-md-0 ps-4" id="pills-tabContent">
           <div class="tab-pane fade show active" id="pills-showAll" role="tabpanel" aria-labelledby="pills-showAll-tab">
-              <div class="row mt-5">
-                <div class="col-6 ps-3">
-                  <div class="row ps-5">
-                    <p class="col-3 mb-3 orange fw-bold" style="font-size: 17px;">Lobster Bisque</p>
-                    <div class="col-8"><hr></div>
+              <div class="row">
+                <div class="col-lg-6 col-12 ps-lg-3 mt-5">
+                  <div class="row ps-lg-5">
+                    <p class="col-lg-3 col-5 mb-3 orange fw-bold" style="font-size: 17px;">Lobster Bisque</p>
+                    <div class="col-lg-8 col-6"><hr></div>
                   <div class="col-1 fw-bold ">5.95$</div>
                   <div class="row">
                     <div class="col-12 text-muted">
@@ -599,10 +638,10 @@
                   </div>
                   </div>
                 </div>
-                <div class="col-6 ">
-                  <div class="row ps-5">
-                    <p class="col-3 mb-3 orange fw-bold" style="font-size: 18px;">Bread barrel</p>
-                    <div class="col-8"><hr></div>
+                <div class="col-lg-6 col-12 mt-5">
+                  <div class="row ps-lg-5">
+                    <p class="col-lg-3 col-5 mb-3 orange fw-bold" style="font-size: 18px;">Bread barrel</p>
+                    <div class="col-lg-8 col-6"><hr></div>
                   <div class="col-1 fw-bold">6.95$</div>
                   <div class="row">
                     <div class="col-12 text-muted">
@@ -612,11 +651,11 @@
                   </div>
                 </div>
               </div>
-              <div class="row mt-5">
-                <div class="col-6 ps-3">
-                  <div class="row ps-5">
-                    <p class="col-3 mb-3 orange fw-bold" style="font-size: 17px;">Crab Cake</p>
-                    <div class="col-8"><hr></div>
+              <div class="row">
+                <div class="col-lg-6 col-12 ps-lg-3 mt-5">
+                  <div class="row ps-lg-5">
+                    <p class="col-lg-3 col-4 mb-3 orange fw-bold" style="font-size: 17px;">Crab Cake</p>
+                    <div class="col-lg-8 col-7"><hr></div>
                   <div class="col-1 fw-bold">7.95$</div>
                   <div class="row">
                     <div class="col-12 text-muted">
@@ -625,10 +664,10 @@
                   </div>
                   </div>
                 </div>
-                <div class="col-6 ps-5">
-                  <div class="row ps-2">
-                    <p class="col-4 mb-3 orange fw-bold" style="font-size: 18px;">Caesar Selections</p>
-                    <div class="col-7"><hr></div>
+                <div class="col-lg-6 col-12 ps-lg-5 mt-5">
+                  <div class="row ps-lg-2">
+                    <p class="col-lg-4 col-6 mb-3 orange fw-bold" style="font-size: 18px;">Caesar Selections</p>
+                    <div class="col-lg-7 col-5"><hr></div>
                   <div class="col-1 fw-bold">8.95$</div>
                   <div class="row">
                     <div class="col-12 text-muted">
@@ -638,11 +677,11 @@
                   </div>
                 </div>
               </div>
-              <div class="row mt-5">
-                <div class="col-6 ps-3">
-                  <div class="row ps-5">
-                    <p class="col-3 mb-3 orange fw-bold" style="font-size: 17px;">Tuscan Grilled</p>
-                    <div class="col-8"><hr></div>
+              <div class="row">
+                <div class="col-lg-6 col-12 ps-lg-3 mt-5">
+                  <div class="row ps-lg-5">
+                    <p class="col-lg-3 col-5 mb-3 orange fw-bold" style="font-size: 17px;">Tuscan Grilled</p>
+                    <div class="col-lg-8 col-6"><hr></div>
                   <div class="col-1 fw-bold">9.95$</div>
                   <div class="row">
                     <div class="col-12 text-muted">
@@ -651,10 +690,10 @@
                   </div>
                   </div>
                 </div>
-                <div class="col-6">
-                  <div class="row ps-5">
-                    <p class="col-4 mb-3 orange fw-bold" style="font-size: 18px;">Mozzarella Stick</p>
-                    <div class="col-7"><hr></div>
+                <div class="col-lg-6 col-12 mt-5">
+                  <div class="row ps-lg-5">
+                    <p class="col-lg-4 col-6 mb-3 orange fw-bold" style="font-size: 18px;">Mozzarella Stick</p>
+                    <div class="col-lg-7 col-5"><hr></div>
                   <div class="col-1 fw-bold">6.95$</div>
                   <div class="row">
                     <div class="col-12 text-muted">
@@ -664,11 +703,11 @@
                   </div>
                 </div>
               </div>
-              <div class="row mt-5">
-                <div class="col-6 ps-3">
-                  <div class="row ps-5">
-                    <p class="col-3 mb-3 orange fw-bold" style="font-size: 17px;">Greek Salad</p>
-                    <div class="col-8"><hr></div>
+              <div class="row">
+                <div class="col-lg-6 col-12 ps-lg-3 mt-5">
+                  <div class="row ps-lg-5">
+                    <p class="col-lg-3 col-5 mb-3 orange fw-bold" style="font-size: 17px;">Greek Salad</p>
+                    <div class="col-lg-8 col-6"><hr></div>
                   <div class="col-1 fw-bold">5.95$</div>
                   <div class="row">
                     <div class="col-12 text-muted">
@@ -677,10 +716,10 @@
                   </div>
                   </div>
                 </div>
-                <div class="col-6">
-                  <div class="row ps-5">
-                    <p class="col-3 mb-3 orange fw-bold" style="font-size: 18px;">Spinach Salad</p>
-                    <div class="col-8"><hr></div>
+                <div class="col-lg-6 col-12 mt-5">
+                  <div class="row ps-lg-5">
+                    <p class="col-lg-3 col-5 mb-3 orange fw-bold" style="font-size: 18px;">Spinach Salad</p>
+                    <div class="col-lg-8 col-6"><hr></div>
                   <div class="col-1 fw-bold">6.95$</div>
                   <div class="row">
                     <div class="col-12 text-muted">
@@ -691,10 +730,10 @@
                 </div>
               </div>
               <div class="row mt-5">
-                <div class="col-6 ps-3">
-                  <div class="row ps-5">
-                    <p class="col-3 mb-3 orange fw-bold" style="font-size: 17px;">Lobster Rol</p>
-                    <div class="col-8"><hr></div>
+                <div class="col-lg-6 col-12 ps-lg-3">
+                  <div class="row ps-lg-5">
+                    <p class="col-lg-3 col-5 mb-3 orange fw-bold" style="font-size: 17px;">Lobster Rol</p>
+                    <div class="col-lg-8 col-6"><hr></div>
                   <div class="col-1 fw-bold">12.95$</div>
                   <div class="row">
                     <div class="col-12 text-muted">
@@ -706,23 +745,23 @@
               </div>
           </div>
           <div class="tab-pane fade" id="pills-starters" role="tabpanel" aria-labelledby="pills-starters-tab">
-            <div class="row mt-5">
-              <div class="col-6 ps-3">
-                <div class="row ps-5">
-                  <p class="col-3 mb-3 orange fw-bold" style="font-size: 17px;">Tuscan Grilled</p>
-                  <div class="col-8"><hr></div>
+            <div class="row">
+              <div class="col-lg-6 col-12 mt-5">
+                <div class="row ps-lg-5">
+                  <p class="col-lg-3 col-5 mb-3 orange fw-bold" style="font-size: 17px;">Tuscan Grilled</p>
+                  <div class="col-lg-8 col-6"><hr></div>
                 <div class="col-1 fw-bold">9.95$</div>
                 <div class="row">
                   <div class="col-12 text-muted">
-                    Lorem, deren, trataro, filede, nerada
+                    Grilled chicken with provolone, artichoke hearts, and roasted red pesto
                   </div>
                 </div>
                 </div>
               </div>
-              <div class="col-6">
-                <div class="row ps-5">
-                  <p class="col-4 mb-3 orange fw-bold" style="font-size: 18px;">Mozzarella Stick</p>
-                  <div class="col-7"><hr></div>
+              <div class="col-lg-6 col-12 ps-lg-3 mt-5">
+                <div class="row ps-lg-5">
+                  <p class="col-lg-4 col-6 mb-3 orange fw-bold" style="font-size: 18px;">Mozzarella Stick</p>
+                  <div class="col-lg-7 col-5"><hr></div>
                 <div class="col-1 fw-bold">6.95$</div>
                 <div class="row">
                   <div class="col-12 text-muted">
@@ -733,10 +772,10 @@
               </div>
             </div>
             <div class="row mt-5">
-              <div class="col-6 ">
-                <div class="row ps-5">
-                  <p class="col-3 mb-3 orange fw-bold" style="font-size: 18px;">Bread barrel</p>
-                  <div class="col-8"><hr></div>
+              <div class="col-lg-6 col-12 ">
+                <div class="row ps-lg-5">
+                  <p class="col-lg-3 col-5 mb-3 orange fw-bold" style="font-size: 18px;">Bread barrel</p>
+                  <div class="col-lg-8 col-6"><hr></div>
                 <div class="col-1 fw-bold">6.95$</div>
                 <div class="row">
                   <div class="col-12 text-muted">
@@ -748,11 +787,11 @@
             </div>
           </div>
           <div class="tab-pane fade" id="pills-salads" role="tabpanel" aria-labelledby="pills-salads-tab">
-            <div class="row mt-5">
-              <div class="col-6 ">
-                <div class="row ps-5">
-                  <p class="col-3 mb-3 orange fw-bold" style="font-size: 18px;">Bread barrel</p>
-                  <div class="col-8"><hr></div>
+            <div class="row">
+              <div class="col-lg-6 col-12 ps-lg-3 mt-5">
+                <div class="row ps-lg-5">
+                  <p class="col-lg-3 col-5 mb-3 orange fw-bold" style="font-size: 18px;">Bread barrel</p>
+                  <div class="col-lg-8 col-6"><hr></div>
                 <div class="col-1 fw-bold">6.95$</div>
                 <div class="row">
                   <div class="col-12 text-muted">
@@ -761,10 +800,10 @@
                 </div>
                 </div>
               </div>
-              <div class="col-6 ps-5">
-                <div class="row ps-2">
-                  <p class="col-4 mb-3 orange fw-bold" style="font-size: 18px;">Caesar Selections</p>
-                  <div class="col-7"><hr></div>
+              <div class="col-lg-6 col-12 ps-lg-5 mt-5">
+                <div class="row ps-lg-2">
+                  <p class="col-lg-4 col-6 mb-3 orange fw-bold" style="font-size: 18px;">Caesar Selections</p>
+                  <div class="col-lg-7 col-5"><hr></div>
                 <div class="col-1 fw-bold">8.95$</div>
                 <div class="row">
                   <div class="col-12 text-muted">
@@ -775,10 +814,10 @@
               </div>
             </div>
             <div class="row mt-5">
-              <div class="col-6 ps-3">
-                <div class="row ps-5">
-                  <p class="col-3 mb-3 orange fw-bold" style="font-size: 17px;">Crab Cake</p>
-                  <div class="col-8"><hr></div>
+              <div class="col-lg-6 col-12 ps-lg-3">
+                <div class="row ps-lg-5">
+                  <p class="col-lg-3 col-4 mb-3 orange fw-bold" style="font-size: 17px;">Crab Cake</p>
+                  <div class="col-lg-8 col-7"><hr></div>
                 <div class="col-1 fw-bold">7.95$</div>
                 <div class="row">
                   <div class="col-12 text-muted">
@@ -790,11 +829,11 @@
             </div>
           </div>
           <div class="tab-pane fade" id="pills-specially" role="tabpanel" aria-labelledby="pills-specially-tab">
-            <div class="row mt-5">
-              <div class="col-6 ps-3">
-                <div class="row ps-5">
-                  <p class="col-3 mb-3 orange fw-bold" style="font-size: 17px;">Greek Salad</p>
-                  <div class="col-8"><hr></div>
+            <div class="row">
+              <div class="col-lg-6 col-12 ps-lg-3 mt-5">
+                <div class="row ps-lg-5">
+                  <p class="col-lg-3 col-5 mb-3 orange fw-bold" style="font-size: 17px;">Greek Salad</p>
+                  <div class="col-lg-8 col-6"><hr></div>
                 <div class="col-1 fw-bold">5.95$</div>
                 <div class="row">
                   <div class="col-12 text-muted">
@@ -803,10 +842,10 @@
                 </div>
                 </div>
               </div>
-              <div class="col-6">
-                <div class="row ps-5">
-                  <p class="col-3 mb-3 orange fw-bold" style="font-size: 18px;">Spinach Salad</p>
-                  <div class="col-8"><hr></div>
+              <div class="col-lg-6 col-12 ps-lg-3 mt-5">
+                <div class="row ps-lg-5">
+                  <p class="col-lg-3 col-5 mb-3 orange fw-bold" style="font-size: 18px;">Spinach Salad</p>
+                  <div class="col-lg-8 col-6"><hr></div>
                 <div class="col-1 fw-bold">6.95$</div>
                 <div class="row">
                   <div class="col-12 text-muted">
@@ -817,10 +856,10 @@
               </div>
             </div>
             <div class="row mt-5">
-              <div class="col-6 ps-3">
-                <div class="row ps-5">
-                  <p class="col-3 mb-3 orange fw-bold" style="font-size: 17px;">Greek Salad</p>
-                  <div class="col-8"><hr></div>
+              <div class="col-lg-6 col-12 ps-3">
+                <div class="row ps-lg-5">
+                  <p class="col-lg-3 col-5 mb-3 orange fw-bold" style="font-size: 17px;">Greek Salad</p>
+                  <div class="col-lg-8 col-6"><hr></div>
                 <div class="col-1 fw-bold">5.95$</div>
                 <div class="row">
                   <div class="col-12 text-muted">
@@ -834,11 +873,11 @@
         </div>
         </div>
     </div>
-    <div class="row  mw-100">
-      <div class="col-12">
+    <div class="row mw-100 d-flex justify-content-center ps-3">
+      <div class="col-lg-5">
         <p class="text-dark text-center mt-5 line" style="font-size: 16px;">
           <span class="title text-dark" style="font-size: 30px;">Check Our</span> <span class="title" style="color:orange; font-size: 30px;">Specials</span><br><br>
-          Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci <br> expedita at voluptas atque vitae autem.
+          Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.
         </p>
       </div>
     </div>
@@ -906,7 +945,7 @@
       <div class="fixed-bg-image darkened-image" style="background-image: url('img/events-bg.jpg');"></div>
       <div class="row mw-100 bg-text">
         <p class="text-center pt-5 title brightness" style="font-size: 35px;">
-          Organize Your<span style="color:orange; font-size: 30px;">Events</span> in our Restaurant
+          Organize Your<span style="color:orange; font-size: 30px;">Events </span> in our Restaurant
         </p>
         <div id="carouselExample" class="carousel slide second-slider" data-bs-ride="carousel">
           <ol class="carousel-indicators ">
@@ -991,11 +1030,13 @@
         </div>
       </div>
     </div>
-    <div class="row  mw-100">
-      <p class="text-dark text-center mt-5 line text-muted" style="font-size: 18px;">
-        <span class="title text-dark text-muted" style="font-size: 32px;">Book a </span> <span class="title" style="color:orange; font-size: 30px;">Table</span><br><br>
-        Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci <br> expedita at voluptas atque vitae autem.
-      </p>
+    <div class="row mw-100 d-flex justify-content-center ps-3">
+      <div class="col-lg-5">
+        <p class="text-dark text-center mt-5 line text-muted" style="font-size: 18px;">
+          <span class="title text-dark text-muted" style="font-size: 32px;">Book a </span> <span class="title" style="color:orange; font-size: 30px;">Table</span><br><br>
+          Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.
+        </p>
+      </div>
     </div>
     <div class="row mw-100 text-black d-flex justify-content-center my-4">
       <div class="card shadow-lg col-10 p-4">
@@ -1047,11 +1088,13 @@
         </div>
       </div>
     </div>
-    <div class="row  mw-100">
-      <p class="text-dark text-center mt-5 line text-muted" style="font-size: 18px;">
-        <span class="title text-dark text-muted" style="font-size: 32px;">Some photos from </span> <span class="title" style="color:orange; font-size: 30px;">Our Restaurant</span><br><br>
-        Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci <br> expedita at voluptas atque vitae autem.
-      </p>
+    <div class="row mw-100 bg-text d-flex justify-content-center ps-3">
+      <div class="col-lg-5">
+        <p class="text-dark text-center mt-5 line text-muted" style="font-size: 18px;">
+          <span class="title text-dark text-muted" style="font-size: 32px;">Some photos from </span> <span class="title" style="color:orange; font-size: 30px;">Our Restaurant</span><br><br>
+          Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.
+        </p>
+      </div>
     </div>
     <div class="container-fluid">
       <main class="row">
@@ -1146,6 +1189,108 @@
       </div>
       </main>
     </div>
+    <div class="wrap2 mw-100">
+      <div class="fixed-bg-image darkened-image2 mw-100" style="background-image: url('img/chefs-bg.jpg');"></div>
+      <div class="row mw-100 bg-text d-flex justify-content-center p-lg-5">
+        <div class="col-lg-5">
+        <p class="text-dark text-center mt-5 line text-muted" style="font-size: 17px;">
+          <span class="title text-dark text-muted" style="font-size: 32px;">Our Proffesional </span> <span class="title" style="color:orange; font-size: 30px;">Chefs</span><br><br>
+          Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.
+        </p>
+        </div>
+        <div class="row d-flex justify-content-center mt-3 mb-5 ps-lg-5">
+          <div class="col-12 col-lg-4">
+            <div class="bg-image">
+              <img src="img/chefs/chefs-1.jpg" class="chef-img mw-100">
+              <div class="card-image text-black mx-auto" style="width: 90%;">
+                <div class="card rounded-0">
+                  <div class="card-body text-center">
+                    <div class="row text-center d-flex justify-content-center text-dark lh-1">
+                      <p class="text-muted" style="font-size: 18px;">
+                        Walter White
+                      </p>
+                      <hr style="color: darkorange; width: 17%; border: 1px solid;">
+                      <p class="text-muted"  style="font-size: 14px;">
+                        Master Chef
+                      </p>
+                      <div class="col-lg-4 col-6">
+                        <div class="row mt-1">
+                          <div class="col-1"><a href="index.html"><i class="bi bi-twitter hover-orange"></i></a></div>
+                          <div class="col-1"><a href="index.html"><i class="bi bi-facebook hover-orange"></i></a></div>
+                          <div class="col-1"><a href="index.html"><i class="bi bi-instagram hover-orange"></i></a></div>
+                          <div class="col-1"><a href="index.html"><i class="bi bi-linkedin hover-orange"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row ">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="bg-image">
+              <img src="img/chefs/chefs-2.jpg" class="chef-img mw-100">
+              <div class="card-image text-black mx-auto" style="width: 90%;">
+                <div class="card rounded-0">
+                  <div class="card-body text-center">
+                    <div class="row text-center d-flex justify-content-center text-dark lh-1">
+                      <p class="text-muted" style="font-size: 18px;">
+                        Sarah Jhonson
+                      </p>
+                      <hr style="color: darkorange; width: 17%; border: 1px solid;">
+                      <p class="text-muted"  style="font-size: 14px;">
+                        Patissier
+                      </p>
+                      <div class="col-lg-4 col-6">
+                        <div class="row mt-1">
+                          <div class="col-1"><a href="index.html"><i class="bi bi-twitter hover-orange"></i></a></div>
+                          <div class="col-1"><a href="index.html"><i class="bi bi-facebook hover-orange"></i></a></div>
+                          <div class="col-1"><a href="index.html"><i class="bi bi-instagram hover-orange"></i></a></div>
+                          <div class="col-1"><a href="index.html"><i class="bi bi-linkedin hover-orange"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="bg-image">
+              <img src="img/chefs/chefs-3.jpg" class="chef-img mw-100">
+              <div class="card-image text-black mx-auto" style="width: 90%;">
+                <div class="card rounded-0">
+                  <div class="card-body text-center">
+                    <div class="row text-center d-flex justify-content-center text-dark lh-1">
+                      <p class="text-muted" style="font-size: 18px;">
+                        William Anderson
+                      </p>
+                      <hr style="color: darkorange; width: 17%; border: 1px solid;">
+                      <p class="text-muted"  style="font-size: 14px;">
+                        Cook
+                      </p>
+                      <div class="col-lg-4 col-6">
+                        <div class="row mt-1">
+                          <div class="col-1"><a href="index.html"><i class="bi bi-twitter hover-orange"></i></a></div>
+                          <div class="col-1"><a href="index.html"><i class="bi bi-facebook hover-orange"></i></a></div>
+                          <div class="col-1"><a href="index.html"><i class="bi bi-instagram hover-orange"></i></a></div>
+                          <div class="col-1"><a href="index.html"><i class="bi bi-linkedin hover-orange"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
     
     
     <!-- light box -->
