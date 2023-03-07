@@ -40,7 +40,7 @@
         padding-bottom: 10px;
       }
       .darkened-image {
-        filter: brightness(50%);
+        filter: brightness(40%);
       }
       .darkened-image2 {
         filter: opacity(25%);
@@ -322,27 +322,25 @@
       .wrap2>.bg-text{
         position: absolute;
         width: 1500px;
-        height: 400px;
-        top: 20%;
+        height: 750px;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
       .wrap2>.darkened-image{
         position: relative;
       }
-      .testimonial {
-        min-height: 375px;
+      .wrap3{
         position: relative;
-        background: url(https://i.ibb.co/PTJDkgb/testimonials.jpg);
-        background-position: center;
-        background-size: cover;
+        height: 750px; 
       }
-      .testimonial4_slide img {
-        margin: auto;
-        display: block;
-        text-align: center;
-        position: relative;
-        border-radius: 50%;
+      .wrap3>.bg-text{
+        position: absolute;
+        width: 1500px;
+        height: 750px;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
       @media (max-width: 1000px) {
         #tabs .nav-tabs .nav-link.active {
@@ -1303,42 +1301,103 @@
         </div>
       </div>
     </div>
-    <div class="row mw-100">
-      <section class="testimonial text-center">
-        <div class="container">
-            <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
-             
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <div class="testimonial4_slide">
-                            <img src="img/testimonials/testimonials-1.jpg" class="mw-100">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                            <h4>Client 1</h4>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="testimonial4_slide">
-                            <img src="img/testimonials/testimonials-1.jpg" class="mw-100"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                            <h4>Client 2</h4>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="testimonial4_slide">
-                            <img src="img/testimonials/testimonials-1.jpg" class="mw-100">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                            <h4>Client 3</h4>
-                        </div>
-                    </div>
+    <br><br><br>
+    <div class="row mw-100 mt-5 pt-5">
+      <div class="wrap3  mb-5">
+        <div class="bg-text darkened-image mw-100" style="background-image: url('img/testimonials-bg.jpg');"></div>
+        <div class="row">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <ol class="carousel-indicators ">
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="dots active"></li>
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="dots"></li>
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="dots"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row d-flex justify-content-center">
+                  <img src="img/testimonials/testimonials-1.jpg" alt="" class="rounded-circle" style="width: 130px; border: 4px darkgrey solid; border-radius: 50%;">
                 </div>
-                <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#testimonial4" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
+                <div class="row text-center d-flex justify-content-center text-white lh-1 mt-4">
+                  <p class="fw-bold" style="font-size: 22px;">
+                    Saul Goodman
+                  </p>
+                  <p class="lead"  style="font-size: 14px;">
+                    Master Chef
+                  </p>
+                  <div class="row mt-2">
+                    <div class="col">
+                      <i class="col bi bi-star-fill" style="color: rgb(237, 177, 67);"></i>
+                      <i class="col bi bi-star-fill" style="color: rgb(237, 177, 67);;"></i>
+                      <i class="col bi bi-star-fill" style="color: rgb(237, 177, 67);;"></i>
+                      <i class="col bi bi-star-fill" style="color: rgb(237, 177, 67);;"></i>
+                      <i class="col bi bi-star-fill" style="color: rgb(237, 177, 67);;"></i>
+                    </div>
+                  </div>
+                  <div class="row d-flex mt-4" style="font-size: 18px;">
+                    <i class="fa fa-quote-left col"  style="color: lightgrey;">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempore animi iusto aspernatur quis velit.
+                      <i class="fa fa-quote-right col"  style="color: lightgrey;"></i></i>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row d-flex justify-content-center">
+                  <img src="img/testimonials/testimonials-1.jpg" alt="" class="rounded-circle" style="width: 130px; border: 4px darkgrey solid; border-radius: 50%;">
+                </div>
+                <div class="row text-center d-flex justify-content-center text-white lh-1 mt-4">
+                  <p class="fw-bold" style="font-size: 22px;">
+                    Saul Goodman
+                  </p>
+                  <p class="lead"  style="font-size: 14px;">
+                    Master Chef
+                  </p>
+                  <div class="row mt-2">
+                    <div class="col">
+                      <i class="col bi bi-star-fill" style="color: rgb(237, 177, 67);"></i>
+                      <i class="col bi bi-star-fill" style="color: rgb(237, 177, 67);;"></i>
+                      <i class="col bi bi-star-fill" style="color: rgb(237, 177, 67);;"></i>
+                      <i class="col bi bi-star-fill" style="color: rgb(237, 177, 67);;"></i>
+                      <i class="col bi bi-star-fill" style="color: rgb(237, 177, 67);;"></i>
+                    </div>
+                  </div>
+                  <div class="row d-flex mt-4" style="font-size: 18px;">
+                    <i class="fa fa-quote-left col"  style="color: lightgrey;">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempore animi iusto aspernatur quis velit.
+                      <i class="fa fa-quote-right col"  style="color: lightgrey;"></i></i>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row d-flex justify-content-center">
+                  <img src="img/testimonials/testimonials-1.jpg" alt="" class="rounded-circle" style="width: 130px; border: 4px darkgrey solid; border-radius: 50%;">
+                </div>
+                <div class="row text-center d-flex justify-content-center text-white lh-1 mt-4">
+                  <p class="fw-bold" style="font-size: 22px;">
+                    Saul Goodman
+                  </p>
+                  <p class="lead"  style="font-size: 14px;">
+                    Master Chef
+                  </p>
+                  <div class="row mt-2">
+                    <div class="col">
+                      <i class="col bi bi-star-fill" style="color: rgb(237, 177, 67);"></i>
+                      <i class="col bi bi-star-fill" style="color: rgb(237, 177, 67);;"></i>
+                      <i class="col bi bi-star-fill" style="color: rgb(237, 177, 67);;"></i>
+                      <i class="col bi bi-star-fill" style="color: rgb(237, 177, 67);;"></i>
+                      <i class="col bi bi-star-fill" style="color: rgb(237, 177, 67);;"></i>
+                    </div>
+                  </div>
+                  <div class="row d-flex mt-4" style="font-size: 18px;">
+                    <i class="fa fa-quote-left col"  style="color: lightgrey;">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempore animi iusto aspernatur quis velit.
+                      <i class="fa fa-quote-right col"  style="color: lightgrey;"></i></i>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+      </div>
     </div>
     
     
