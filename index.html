@@ -322,12 +322,27 @@
       .wrap2>.bg-text{
         position: absolute;
         width: 1500px;
-        top: 55%;
+        height: 400px;
+        top: 20%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
       .wrap2>.darkened-image{
         position: relative;
+      }
+      .testimonial {
+        min-height: 375px;
+        position: relative;
+        background: url(https://i.ibb.co/PTJDkgb/testimonials.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+      .testimonial4_slide img {
+        margin: auto;
+        display: block;
+        text-align: center;
+        position: relative;
+        border-radius: 50%;
       }
       @media (max-width: 1000px) {
         #tabs .nav-tabs .nav-link.active {
@@ -360,16 +375,15 @@
       }
       .wrap2{
         position: relative;
-        height: 1480px;
+        height: 1800px;
         
       }
       .wrap2>.bg-text{
         position: absolute;
-        width: 1500px;
-        top: 50%;
+        height: 300px !important;
+        top: 9%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 100%;
       }
       .chef-img{
         width: 395px !important;
@@ -1189,9 +1203,9 @@
       </div>
       </main>
     </div>
-    <div class="wrap2 mw-100">
+    <div class="wrap2 mw-100 mb-5">
       <div class="fixed-bg-image darkened-image2 mw-100" style="background-image: url('img/chefs-bg.jpg');"></div>
-      <div class="row mw-100 bg-text d-flex justify-content-center p-lg-5">
+      <div class="row mw-100 bg-text d-flex justify-content-center p-lg-5 ps-5">
         <div class="col-lg-5">
         <p class="text-dark text-center mt-5 line text-muted" style="font-size: 17px;">
           <span class="title text-dark text-muted" style="font-size: 32px;">Our Proffesional </span> <span class="title" style="color:orange; font-size: 30px;">Chefs</span><br><br>
@@ -1289,6 +1303,44 @@
         </div>
       </div>
     </div>
+    <div class="row mw-100">
+      <section class="testimonial text-center">
+        <div class="container">
+            <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+             
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="testimonial4_slide">
+                            <img src="img/testimonials/testimonials-1.jpg" class="mw-100">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <h4>Client 1</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="img/testimonials/testimonials-1.jpg" class="mw-100"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <h4>Client 2</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="img/testimonials/testimonials-1.jpg" class="mw-100">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <h4>Client 3</h4>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#testimonial4" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+    </div>
+    
     
 
     
