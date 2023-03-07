@@ -40,10 +40,13 @@
         padding-bottom: 10px;
       }
       .darkened-image {
-        filter: brightness(40%);
+        filter: brightness(55%);
       }
       .darkened-image2 {
         filter: opacity(25%);
+      }
+      .darkened-image3 {
+        filter: brightness(30%);
       }
       .title{
         font-family: 'Lobster', cursive !important;
@@ -332,26 +335,36 @@
       }
       .wrap3{
         position: relative;
-        height: 500px; 
+        height: 450px; 
       }
       .wrap3>.bg-text{
         position: absolute;
         width: 100%;
         height: 500px;
         left: 50%;
-        top: 45%;
-        transform: translate(-40%, -50%);
+        top: 70%;
+        transform: translate(-50%, -80%);
       }
       .slider4{
-        height: 400px;
+        height: 350px;
       }
       .silder4 > .carousel-item{
-        height: 300px;
+        height: 100px;
       }
       .silder4 > .carousel-item.active  {
+        height: 100px !important;
+      }
+      .img-circle{
+        width: 120px;
+        height: 120px;
+        border: 6px rgba(63, 63, 63, 0.664) solid;
+      }
+      .row.slider4{
         height: 300px;
       }
-      
+      .img-sm{
+        /* transform: scale(1); */
+      }
       @media (max-width: 1000px) {
         #tabs .nav-tabs .nav-link.active {
         border: 0px;
@@ -964,7 +977,7 @@
       </section>
     </div>
     <div class="wrap mw-100 mt-4" >
-      <div class="fixed-bg-image darkened-image" style="background-image: url('img/events-bg.jpg');"></div>
+      <div class="fixed-bg-image darkened-image3" style="background-image: url('img/events-bg.jpg');"></div>
       <div class="row mw-100 bg-text">
         <p class="text-center pt-5 title brightness" style="font-size: 35px;">
           Organize Your<span style="color:orange; font-size: 30px;">Events </span> in our Restaurant
@@ -1211,8 +1224,8 @@
       </div>
       </main>
     </div>
-    <div class="wrap2 mw-100 mb-5 ">
-      <div class="fixed-bg-image darkened-image2 mw-100" style="background-image: url('img/chefs-bg.jpg');"></div>
+    <div class="wrap2 mw-100">
+      <div class="fixed-bg-image darkened-image2 mw-100" style="background-image: url('img/chefs-bg.jpg'); width: 1520px;"></div>
       <div class="row mw-100 bg-text d-flex justify-content-center p-lg-5 ps-5">
         <div class="col-lg-5">
         <p class="text-dark text-center mt-5 line text-muted" style="font-size: 17px;">
@@ -1312,18 +1325,18 @@
       </div>
     </div>
     <div class="wrap3 mw-100 mb-5" style="height: 500px;">
-      <div class=" darkened-image mw-100" style="background-image: url('img/testimonials-bg.jpg'); height: 500px;"></div>
-      <div class="row mw-100 bg-text d-flex justify-content-center p-lg-5 ps-5">
+      <div class=" darkened-image3 mw-100 img-sm" style="background-image: url('img/testimonials-bg.jpg'); height: 500px; width: 1520px;"></div>
+      <div class="row  bg-text d-flex justify-content-center slider4">
         <div id="carouselExampleIndicators" class="carousel slide slider4">
           <ol class="carousel-indicators">
             <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="dots active"></li>
             <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="dots"></li>
             <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="dots"></li>
           </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row d-flex justify-content-center">
-                <img src="img/testimonials/testimonials-1.jpg" alt="" class="rounded-circle" style="width: 130px; border: 4px darkgrey solid; border-radius: 50%;">
+          <div class="carousel-inner slider4">
+            <div class="carousel-item active slider4">
+              <div class="d-flex justify-content-center">
+                <img src="img/testimonials/testimonials-1.jpg" alt="" class="img-circle rounded-circle">
               </div>
               <div class="row text-center d-flex justify-content-center text-white lh-1 mt-4">
                 <p class="fw-bold" style="font-size: 22px;">
@@ -1349,8 +1362,8 @@
               </div>
             </div>
             <div class="carousel-item">
-              <div class="row d-flex justify-content-center">
-                <img src="img/testimonials/testimonials-1.jpg" alt="" class="rounded-circle" style="width: 130px; border: 4px darkgrey solid; border-radius: 50%;">
+              <div class="d-flex justify-content-center">
+                <img src="img/testimonials/testimonials-1.jpg" alt="" class="img-circle rounded-circle mw-100">
               </div>
               <div class="row text-center d-flex justify-content-center text-white lh-1 mt-4">
                 <p class="fw-bold" style="font-size: 22px;">
@@ -1376,8 +1389,8 @@
               </div>
             </div>
             <div class="carousel-item">
-              <div class="row d-flex justify-content-center">
-                <img src="img/testimonials/testimonials-1.jpg" alt="" class="rounded-circle" style="width: 130px; border: 4px darkgrey solid; border-radius: 50%;">
+              <div class="d-flex justify-content-center">
+                <img src="img/testimonials/testimonials-1.jpg" alt="" class="img-circle rounded-circle">
               </div>
               <div class="row text-center d-flex justify-content-center text-white lh-1 mt-4">
                 <p class="fw-bold" style="font-size: 22px;">
