@@ -43,7 +43,7 @@
       padding-bottom: 10px;
     }
     .darkened-image {
-      filter: brightness(55%);
+      filter: brightness(50%);
     }
     .darkened-image2 {
       filter: opacity(25%);
@@ -79,9 +79,9 @@
       background-color: #000;
       padding: 15px;
     }
-    .btn-min-block {
-      min-width: 170px;
-      line-height: 26px;
+    .btn-min {
+      min-width: 150px;
+      padding: 8px;
     }
     .btn-theme {
       color: #fff;
@@ -312,9 +312,6 @@
       opacity: 0.8 !important;
       --bs-backdrop-zindex: 0 !important;
     }
-    /* .f-modal-backdrop.show{
-      opacity: 1 !important;
-    } */
     .card-image{
       position: relative;
       bottom: 60px;
@@ -400,17 +397,38 @@
     .CR:hover{
       color:white !important;
     }
+    
     .img-sm{
       /* transform: scale(1); */
     }
-    @media (max-width: 750px) {
+    @media (max-width: 420px) {
       .number{
         display: flex;
         justify-content: center !important;
       }
-      .navbar{
-        padding-top: 30px;
+      .navbar-dark{
+        padding-top: 50px !important;
         transition: all 0.5;
+      }
+      .navbar-dark-scrolled{
+        padding-top: 10px !important;
+        transition: all 0.5;
+      }
+      .first-slider{
+        height: 950px;
+      }
+      .first-slider-image{
+        height: 750px;
+        min-width: 625px;
+        float: center;
+      }
+      .btn-min {
+        min-width: 150px;
+        padding: 8px;
+      }
+      .slider1{
+        height: 750px !important;
+        width: 420px;
       }
     }
     @media (max-width: 1000px) {
@@ -591,69 +609,69 @@
       </div>
     </div>
   </nav>
-  <div id="carouselExampleCaptions" class="carousel slide">
-    <div class="carousel-indicators">
+  <div id="carouselExampleCaptions" class="carousel slider1">
+    <div class="carousel-indicators d-flex">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-    <div id="carousel" class="carousel-inner">
+    <div id="carousel" class="carousel-inner first-slider">
       <div class="carousel-item active">
-        <img src="img/slide/slide-1.jpg" class="darkened-image mw-100" alt="">
+        <img src="img/slide/slide-1.jpg" class=" darkened-image first-slider-image" alt="">
         <div class="header-text hidden-xs">
           <div class="text-center pt-5">
-              <h1 class="mt-5 title">
+              <h1 class="mt-md-5 title">
                 <span style="color: orange;">Delicious</span> Restaurant
               </h1>
               <br>
-              <p class="text-center pe-5 col-6 mx-auto">
+              <p class="text-center pe-lg-5 col-md-6 col-10 mx-auto mt-4">
                 Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam.
                 Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque
                 accusamus repellendus deleniti vel. Minus et tempore modi architecto.
               </p>
               <br>
-              <div class="">
-                <a class="btn btn-theme btn-sm btn-min-block" href="#">OUR MENU</a><a class="btn btn-theme btn-sm btn-min-block" href="#">BOOK A TABLE</a>
+              <div class="d-flex justify-content-center mx-auto ps-3">
+                <a class="btn btn-theme btn-sm btn-min" href="#">OUR MENU</a><a class="btn btn-theme btn-sm btn-min" href="#">BOOK A TABLE</a>
               </div>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="img/slide/slide-2.jpg" class="darkened-image mw-100" alt="">
+        <img src="img/slide/slide-2.jpg" class="darkened-image first-slider-image" alt="">
         <div class="header-text hidden-xs">
           <div class="text-center pt-5">
             <h1 class="mt-5 title">
               <span style="color: orange;">Delicious</span> Restaurant
             </h1>
             <br>
-            <p class="text-center pe-5 col-6 mx-auto">
+            <p class="text-center pe-lg-5 col-md-6 col-10 mx-auto mt-4">
               Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam.
               Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque
               accusamus repellendus deleniti vel. Minus et tempore modi architecto.
             </p>
             <br>
-            <div class="">
-              <a class="btn btn-theme btn-sm btn-min-block" href="#">OUR MENU</a><a class="btn btn-theme btn-sm btn-min-block" href="#">BOOK A TABLE</a>
+            <div class="d-flex justify-content-center mx-auto ps-3">
+              <a class="btn btn-theme btn-sm btn-min" href="#">OUR MENU</a><a class="btn btn-theme btn-sm btn-min" href="#">BOOK A TABLE</a>
             </div>
         </div>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="img/slide/slide-3.jpg" class="darkened-image mw-100" alt="">
+        <img src="img/slide/slide-3.jpg" class="darkened-image first-slider-image" alt="">
         <div class="header-text hidden-xs">
           <div class="text-center pt-5">
             <h1 class="mt-5 title">
               <span style="color: orange;">Delicious</span> Restaurant
             </h1>
             <br>
-            <p class="text-center pe-5 col-6 mx-auto">
+            <p class="text-center pe-lg-5 col-md-6 col-10 mx-auto mt-4">
               Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam.
               Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque
               accusamus repellendus deleniti vel. Minus et tempore modi architecto.
             </p>
             <br>
-            <div class="">
-              <a class="btn btn-theme btn-sm btn-min-block" href="#">OUR MENU</a><a class="btn btn-theme btn-sm btn-min-block" href="#">BOOK A TABLE</a>
+            <div class="d-flex justify-content-center mx-auto ps-3">
+              <a class="btn btn-theme btn-sm btn-min" href="#">OUR MENU</a><a class="btn btn-theme btn-sm btn-min" href="#">BOOK A TABLE</a>
             </div>
         </div>
         </div>
@@ -668,8 +686,8 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <div class="row mw-100 mb-5 pb-5">
-    <div class="container col-5 mt-5 pe-5">
+  <div class="row mw-100 mb-5 pb-5 d-block d-md-flex">
+    <div class="container col-lg-5 col-12 mt-5 pe-5">
       <img src="img/about.jpg" class="vid-img mw-100" alt="">
       <div class="centered"><a href="https://www.youtube.com/"> <i class="bi bi-play-circle-fill" style="font-size: 70px; color:#ffb03b;"></i></a></div>
     </div>
@@ -1742,6 +1760,17 @@
         }
         else if (window.scrollY <65){
             navvigation.classList.remove('navbar-scrolled')
+        }
+    })
+
+
+    const navvigation2 = document.getElementsByClassName('navbar-dark');
+    window.addEventListener('scroll' , () => {
+        if (window.scrollY >= 40){
+            navvigation.classList.add('navbar-dark-scrolled')
+        }
+        else if (window.scrollY <40){
+            navvigation.classList.remove('navbar-dark-scrolled')
         }
     })
   </script>
