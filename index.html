@@ -140,10 +140,6 @@
       border-radius: 50%;
       padding: 20px;
     }
-    .vid-img{
-      max-width: 635px;
-      height: 460px;
-    }
     .bi-check2-all{
       color: orange;
     }
@@ -178,7 +174,7 @@
     .card-group>.col-12>.card:hover > .card-body > .card-text{
       color: white;
     }
-    .container {
+    .container-fluid {
       position: relative;
     }
     .centered {
@@ -397,7 +393,9 @@
     .CR:hover{
       color:white !important;
     }
-    
+    .vid-img{
+        height: 650px !important;
+      }
     .img-sm{
       /* transform: scale(1); */
     }
@@ -415,7 +413,7 @@
         transition: all 0.5;
       }
       .first-slider{
-        height: 950px;
+        height: 750px;
       }
       .first-slider-image{
         height: 750px;
@@ -429,6 +427,18 @@
       .slider1{
         height: 750px !important;
         width: 420px;
+      }
+      .carousel-inner.first-slider{
+        height: 750px;
+      }
+      .vid-img{
+        height: 400px !important;
+        /* width: 490px; */
+      }
+    }
+    @media (min-width:421px) and (max-width:990px) {
+      .vid-img{
+        width: 990px;
       }
     }
     @media (max-width: 1000px) {
@@ -481,10 +491,20 @@
     .carousel-inner.second>.carousel-item{
       height: 800px;
     }
+    .vid-img{
+        /* width: 420px;
+        max-width:  635px; */
+      }
+    }
+    @media (min-width:1200px) {
+      .vid-img{
+        height: 470px !important;
+      }
+      
     }
   </style>
   </head>
-  <body class="">
+  <body class="w-100">
   <div id="fnav" class=" ps-3 py-2 f-nav fixed-top">
     <div class="container mt-2">
     <div class="row pb-1" style="font-size: 16px;">
@@ -686,17 +706,18 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <div class="row mw-100 mb-5 pb-5 d-block d-md-flex">
-    <div class="container col-lg-5 col-12 mt-5 pe-5">
-      <img src="img/about.jpg" class="vid-img mw-100" alt="">
+  <div class="row mw-100 mb-5 pb-5 d-block d-lg-flex">
+    <div class="container-fluid col-lg-5 col-12 mt-5 ">
+      <img src="img/about.jpg" class="responsive vid-img img-fluid ms-0 me-0" alt="">
       <div class="centered"><a href="https://www.youtube.com/"> <i class="bi bi-play-circle-fill" style="font-size: 70px; color:#ffb03b;"></i></a></div>
     </div>
-    <div class="col-7 ps-5 pe-5">
-      <p class="text-secondary ms-5 pe-5 ps-1 mt-5 line" style="font-size: 16px;">
+    <div class="col-lg-7 col-12 ps-5 pe-lg-5">
+      <p class="text-secondary ms-md-5 pe-lg-5 pe-0 ps-1 mt-5 line" style="font-size: 16px;">
 
 
         <span class="title text-dark" style="font-size: 30px;">Eum ipsam laborum deleniti velit pariatur architecto
-          <br>aut nihil</span><br>
+          aut nihil</span><br>
+          <br>
 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit<br><br>
